@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveen's Resume</title>
+</head>
+<body>
+    <div>
+        <div id="div_2">
+            <div id="div_2_1" >
+                <h1 id="div_2_h1_1">NAVEEN KUMAR </h1>
+                <div id="div_2_1_1"></div>
+            </div>
+            <div id="div_2_1_2" >
+                <a class="profile_content" style="background-image:  linear-gradient(to right, rgba(255,0,0,0), red);" href="/index.html">About</a>
+                <a class="profile_content"  href="/projects.html" >Projects</a>
+                <a class="profile_content"  href="/service.html">Experience</a>
+                <a class="profile_content"  href="/contact.html">Contact</a>
+                <!-- <a class="profile_content" style="width: 12%; padding:10px; text-align: center;border-radius: 50px;" href="/blogs.html">Blog's</a> -->
+
+            </div>
+        </div>
+
+        <div id="div_3" >
+            <div id="div_3_1" >
+                <h1 id="div_3_h1_1" > Hey, I'm Naveen.</h1>
+                <p id="div_3_p_1" >
+                    I am looking for a role software engineer, having 2+ years of experience on building projects from scratch, 
+                    strong handson experience on Python, MS SQL, fastAPI, Javascript, HTML and CSS.
+                    knowledge on frameworks like Django, React JS, ReactNative.
+                    <br><br>
+                    Having Experience on micro services, handling payment gates development,
+                    Creation of restful APIs, and strong on ORM concepts.
+                    <br><br>
+                    Experience on test automation using Selenium Python, pytest.
+                    Experience on data scrapping, image processing.
+                    <br><br>
+                    Developing cron jobs, handson work experience of Creation event using posthog, amplitude events. 
+                    
+
+
+                </p>
+                <br>
+                <button id="projects_click" >
+                    My Projects
+                </button>
+                <script>
+                    var ele=document.getElementById("projects_click")
+                    ele.addEventListener("click",()=>{
+                        window.location.assign("/projects.html")
+                    })
+
+    
+                </script>
+            </div>
+            <div id="div_3_2" >
+                <img id="div_3_2_img" src="/profilepic.jpg" alt="Photo" >
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        #div_3_2_img{
+            width: 100%;
+        }
+        .profile_content{
+            width: 12%; 
+            padding:10px; 
+            text-align: center;
+            border-radius: 50px;
+        }
+        #div_3_p_1{
+            color: gray; 
+            font-size: 23px;
+            line-height:3ch;
+        }
+        #div_3_2{
+            background-color: black;
+            display: flex;
+            justify-content: center; 
+            width: 30%;
+            height: 50%; 
+            padding: 40px; 
+            margin-top: 130px;
+        }
+        #div_3_1{
+            width: 70%; 
+            margin-right: 5%;
+        }
+        #div_3{
+            display:flex;
+            padding:10%;
+            position: relative;
+        }
+        #div_2_1_2{
+            display:inline-flex;
+            width: 50%;
+            justify-content: end;
+            height: 100px; 
+        }
+        #div_2_1{
+            width: 50%;
+        }
+        #div_2_1_1{
+            background-color:royalblue ;
+            width: 9%;
+            height: 9%;
+            border-radius: 10px;
+        }
+        #div_2{
+            display: flex;
+        }
+        #projects_click{
+            background-color: royalblue;
+            border-radius: 10px; 
+            height: 10%; 
+            width: 30%; 
+            font-size: 20px; 
+            color:  white; 
+            border: none; 
+            cursor: pointer;
+        }
+        #projects_click:hover{
+            background-image:  linear-gradient(to right, black,red);
+            
+        }
+        .profile_content:hover{
+            background-image:  linear-gradient(to right, rgba(255,0,0,0), royalblue);
+
+        }
+        #div_2_h1_1{
+            color: white;
+        }
+        #div_3_h1_1{
+            color: white;
+            font-size: 50px;
+            /* position: relative; */
+        }
+
+        a{
+            text-decoration: none;
+            color: white ;
+            margin: 30px 25px;
+            margin-right: 0%;
+            font-size: 18px;
+        }
+        body{
+            margin: 50px;
+            background-color: rgb(24, 21, 21);
+            font-family:Arial, Helvetica, sans-serif
+        }
+        @media screen and (max-width:600px) {
+            #div_3_2_img{
+                width: 200px;
+      
+            
+            }
+            #div_3_2{
+                /* border: 1px solid red;   */
+                position: absolute;
+                top: 0%;
+                width: 98%;
+                height: 250px;
+                padding: 0px;
+                background-color: rgb(24, 21, 21);
+                
+
+            }
+            #projects_click{
+              display: none;
+            }
+            #div_3_p_1{
+                /* border: 1px solid red; */
+                width: 99%;
+                line-height: 2.5ch;
+                font-size: 20px;
+                /* margin-top: 300px; */
+                top: 420px;
+                position: absolute;
+                padding-bottom: 20px;
+            }
+            #div_3{
+                display:block;
+                padding: 5px;
+            }
+            #div_3_h1_1{
+                font-size: 40px;
+                /* border: 1px solid red; */
+                width: 142%;
+            }
+            a{
+                /* margin :30px 0px; */
+                font-size: 16px;
+                /* background-color: aqua; */
+                
+                
+            }
+            .profile_content{
+                width:100%; 
+                height: 20px;
+                text-align: center;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 1%;
+            }
+            body{
+                margin: 5px;
+            }
+            #div_2_1_2{
+                /* border:1px solid red; */
+                width: 100%;
+                height: 50%;
+                justify-content:left;
+                margin-top: 20px;
+                
+            }
+            #div_2_1_1{
+                width: 50px;
+                height: 3px;
+                margin: -10px 0px 10px 0px;
+            }
+            #div_2{
+                display: block;
+            }
+
+            #div_2_h1_1{
+                /* font-size: 20px; */
+                /* background-color: aqua; */
+                width: 270px;
+                
+            }
+            #div_2_1{
+                padding: 10px 0px 10px 10px;
+            }
+            
+        }
+
+    </style>
+</body>
+</html>
